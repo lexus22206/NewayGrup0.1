@@ -222,6 +222,7 @@ ul, li {
         );
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 .hero-content {
     display: flex;
@@ -392,6 +393,7 @@ ul, li {
     .hero-wrapper {
         padding: 5px;
         border-radius: 15px;
+	height: 100vh;
     }
     .hero-content {
         padding: 20px 15px;
