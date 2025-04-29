@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuBtns = document.querySelectorAll('.menu__btn');
     const allSubmenus = document.querySelectorAll('.submenu__level');
     const header = document.querySelector('.header');
+    const main = document.querySelector('.main');
     const menuButton = document.querySelector('.menu-mobile__button-wrapper');
     const mobileMenu = document.querySelector('.menu');
     const closeButton = document.querySelector('.menu-mobile__close');
@@ -24,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!clickedInsideMenu) {
         allSubmenus.forEach(sm => sm.style.display = 'none');
         header.style.backgroundColor = '';
+        main?.classList.remove('main--blur');
       }
     });
 
@@ -32,13 +34,16 @@ document.addEventListener('DOMContentLoaded', () => {
         e.stopPropagation();
         const menuItem = e.target.closest('.menu__item');
         const submenu = menuItem?.querySelector('.submenu__level');
+          const isOpen = submenu.style.display === 'flex';
   
         allSubmenus.forEach(sm => sm.style.display = 'none');
   
         if (submenu) {
-          const isOpen = submenu.style.display === 'flex';
           submenu.style.display = isOpen ? 'none' : 'flex';
           header.style.backgroundColor = isOpen ? '' : '#ffffff';
+          main?.classList.toggle('main--blur', !isOpen);
+        } else {
+            main?.classList.remove('main--blur');
         }
       });
     });
@@ -53,5 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.style.overflow = '';
       allSubmenus.forEach(sm => sm.style.display = 'none');
       header.style.backgroundColor = '';
+      main?.classList.remove('main--blur');
     });
   });
