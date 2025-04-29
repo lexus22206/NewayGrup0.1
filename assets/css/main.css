@@ -290,6 +290,9 @@ ul, li {
     pointer-events: auto;
 }
 @media (max-width: 991px)  {
+    .header-wrapper {
+	padding: 15px;
+    }
     .logo {
         margin: 0;
     }
