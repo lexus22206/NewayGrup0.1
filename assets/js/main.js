@@ -60,4 +60,18 @@ document.addEventListener('DOMContentLoaded', () => {
       header.style.backgroundColor = '';
       main?.classList.remove('main--blur');
     });
-  });
+});
+
+window.addEventListener('scroll', function () {
+    const scroll = window.scrollY;
+    const header = document.querySelector('.header');
+  
+    if (scroll < 200) {
+      header.classList.remove('header--sticky', 'header--show');
+    } else {
+      header.classList.add('header--sticky');
+      setTimeout(() => {
+        header.classList.add('header--show');
+      }, 10);
+    }
+}); 
