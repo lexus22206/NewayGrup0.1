@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobile-first</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container-mobile">
+                <div class="header-wrapper">
+                    <a href="" class="logo">
+                        <img src="assets/images/logo.svg" alt="Logo" class="logo-img">
+                    </a>
+                    <nav class="menu">
+                        <div class="menu-mobile">
+                            <div class="lang lang--mobile">
+                                <div class="lang__dropdown">
+                                    <a href="/ua" class="lang__link lang__link--active">Ua</a>
+                                    <a href="/ru" class="lang__link">Ru</a>
+                                    <a href="/pl" class="lang__link">Pl</a>
+                                    <a href="/en" class="lang__link">Eng</a>
+                                </div>
+                            </div>
+                            <div class="menu-mobile__close-wrapper">
+                                <span class="menu-mobile__close">
+                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="3.6636" y1="3.1362" x2="15.8612" y2="15.3338" stroke="white" stroke-width="0.75"/>
+                                        <line x1="15.8667" y1="3.66653" x2="3.66913" y2="15.8641" stroke="white" stroke-width="0.75"/>
+                                    </svg>                                    
+                                </span>
+                            </div>
+                        </div>
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <button class="menu__btn">
+                                    О нас
+                                    <span class="menu__btn-arrow"></span>
+                                </button>
+                                <div class="submenu__level submenu__level--1">
+                                    <ul class="submenu__list">
+                                        <li class="submenu__item" data-target="about-1">
+                                            <button class="submenu__btn">
+                                                Галузи, в которых мы работаем
+                                            </button>
+                                        </li>
+                                        <li class="submenu__item" data-target="about-2">
+                                            <button class="submenu__btn">Про Neway</button>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a href="#" class="submenu__link">Наша команда</a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a href="#" class="submenu__link">Структура компании</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <button class="menu__btn">
+                                    Для работодателя
+                                    <span class="menu__btn-arrow"></span>
+                                </button>
+                            </li>
+                            <li class="menu__item">
+                                <button class="menu__btn">
+                                    Для работника
+                                    <span class="menu__btn-arrow"></span>
+                                </button>
+                            </li>
+                            <li class="menu__item">
+                                <button class="menu__btn">
+                                    Контакты
+                                    <span class="menu__btn-arrow"></span>
+                                </button>
+                            </li>
+                            <li class="menu__item">
+                                <button class="menu__btn">
+                                    Оставить заявку
+                                    <span class="menu__btn-arrow"></span>
+                                </button>
+                            </li>
+                            <li class="menu__item">
+                                <button class="menu__btn">
+                                    Сообщить о нарушении
+                                </button>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="lang">
+                        <button class="lang__current">
+                            UA
+                            <span class="lang__current-arrow"></span>
+                        </button>
+                        <div class="lang__dropdown-wrapper">
+                            <div class="lang__dropdown">
+                                <a href="/ua" class="lang__link lang__link--active">Ua</a>
+                                <a href="/ru" class="lang__link">Ru</a>
+                                <a href="/pl" class="lang__link">Pl</a>
+                                <a href="/en" class="lang__link">Eng</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="menu-mobile__button-wrapper">
+                        <span class="menu-mobile__button">Menu</span>
+                    </button>
+                    
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="mobile-first">
+                <div class="container-mobile">
+                    <div class="section-content">
+                        <h2 class="section-title">
+                            Хотите работать поваром?
+                        </h2>
+                        <p class="section-text">
+                            Свяжитесь с нами – подберём лучшую вакансию для вас.
+                        </p>
+                        <div class="contact__links">
+                            <a href="#" class="contact__button">
+                                <span class="contact__button-text">Нужен персонал?</span>
+                                <span class="contact__button-icon">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.499999 12.1L10.1 2.5L1.5 2.5L1.5 0.499999L13.5 0.5L13.5 12.5L11.5 12.5L11.5 3.9L1.9 13.5L0.499999 12.1Z" fill="#0B1A27"/>
+                                    </svg>                                        
+                                </span>
+                            </a>
+                            <a href="mailto:Administracja@neway.com.pl" class="contact__email">Administracja@neway.com.pl</a>
+                        </div>
+                        <div class="contact-cards">
+                            <div class="contact-card">
+                                <picture>
+                                    <source srcset="assets/images/photo-card-2.avif" type="image/avif">
+                                    <source srcset="assets/images/photo-card-2.webp" type="image/webp">
+                                    <img src="assets/images/photo-card-2.jpg" alt="Badge" class="contact-card__image" loading="lazy">
+                                </picture>
+                                <div class="contact-card__info">
+                                    <div class="contact-card__info-details">
+                                        <h3 class="contact-card__name">
+                                            Вероника
+                                        </h3>
+                                        <a href="mailto:Administracja@neway.com.pl" class="contact-card__email">Administracja@neway.com.pl</a>
+                                    </div>
+                                    <div class="contact-card__info-details">
+                                        <p class="contact-card__activity">
+                                            Территориальная сфера деятельности:
+                                        </p>
+                                        <p class="contact-card__territory">
+                                            Силезское воеводство, Великопольское воеводство, Нижнесилезское воеводство, Лодзинское воеводство
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-card">
+                                <picture>
+                                    <source srcset="assets/images/photo-card-1.avif" type="image/avif">
+                                    <source srcset="assets/images/photo-card-1.webp" type="image/webp">
+                                    <img src="assets/images/photo-card-1.jpg" alt="Badge" class="contact-card__image" loading="lazy">
+                                </picture>
+                               <div class="contact-card__info">
+                                    <div class="contact-card__info-details">
+                                        <h3 class="contact-card__name">
+                                            Лилия
+                                        </h3>
+                                        <a href="mailto:Administracja@neway.com.pl" class="contact-card__email">Administracja@neway.com.pl</a>
+                                    </div>
+                                    <div class="contact-card__info-details">
+                                        <p class="contact-card__activity">
+                                            Территориальная сфера деятельности:
+                                        </p>
+                                        <p class="contact-card__territory">
+                                            Мазовецкое воеводство и Поморское воеводство
+                                        </p>
+                                    </div>
+                               </div>
+                            </div>
+                            <div class="contact-card">
+                                <picture>
+                                    <source srcset="assets/images/photo-card-2.avif" type="image/avif">
+                                    <source srcset="assets/images/photo-card-2.webp" type="image/webp">
+                                    <img src="assets/images/photo-card-2.jpg" alt="Badge" class="contact-card__image" loading="lazy">
+                                </picture>
+                                <div class="contact-card__info">
+                                    <div class="contact-card__info-details">
+                                        <h3 class="contact-card__name">
+                                            Вероника
+                                        </h3>
+                                        <a href="mailto:Administracja@neway.com.pl" class="contact-card__email">Administracja@neway.com.pl</a>
+                                    </div>
+                                    <div class="contact-card__info-details">
+                                        <p class="contact-card__activity">
+                                            Территориальная сфера деятельности:
+                                        </p>
+                                        <p class="contact-card__territory">
+                                            Силезское воеводство, Великопольское воеводство, Нижнесилезское воеводство, Лодзинское воеводство
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-card">
+                                <picture>
+                                    <source srcset="assets/images/photo-card-1.avif" type="image/avif">
+                                    <source srcset="assets/images/photo-card-1.webp" type="image/webp">
+                                    <img src="assets/images/photo-card-1.jpg" alt="Badge" class="contact-card__image" loading="lazy">
+                                </picture>
+                                <div class="contact-card__info">
+                                    <div class="contact-card__info-details">
+                                        <h3 class="contact-card__name">
+                                            Лилия
+                                        </h3>
+                                        <a href="mailto:Administracja@neway.com.pl" class="contact-card__email">Administracja@neway.com.pl</a>
+                                    </div>
+                                    <div class="contact-card__info-details">
+                                        <p class="contact-card__activity">
+                                            Территориальная сфера деятельности:
+                                        </p>
+                                        <p class="contact-card__territory">
+                                            Мазовецкое воеводство и Поморское воеводство
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="city-filter">
+                            <ul class="city__list">
+                                <li class="city__item">
+                                    <a href="#" class="city__link">
+                                        Мазовецкое
+                                    </a>
+                                </li>
+                                <li class="city__item">
+                                    <a href="#" class="city__link">
+                                        Лодзинское
+                                    </a>
+                                </li>
+                                <li class="city__item">
+                                    <a href="#" class="city__link">
+                                        Поморское
+                                    </a>
+                                </li>
+                                <li class="city__item">
+                                    <a href="#" class="city__link">
+                                        Силезийское
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contact-cards">
+                            <div class="contact-card">
+                                <picture>
+                                    <source srcset="assets/images/photo-card-1.avif" type="image/avif">
+                                    <source srcset="assets/images/photo-card-1.webp" type="image/webp">
+                                    <img src="assets/images/photo-card-1.jpg" alt="Badge" class="contact-card__image" loading="lazy">
+                                </picture>
+                                <div class="contact-card__info">
+                                    <div class="contact-card__info-details">
+                                        <h3 class="contact-card__name">
+                                            Лилия
+                                        </h3>
+                                        <a href="mailto:Administracja@neway.com.pl" class="contact-card__email">Administracja@neway.com.pl</a>
+                                    </div>
+                                    <div class="contact-card__info-details">
+                                        <p class="contact-card__activity">
+                                            Территориальная сфера деятельности:
+                                        </p>
+                                        <p class="contact-card__territory">
+                                            Мазовецкое воеводство и Поморское воеводство
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="contact-card">
+                                <picture>
+                                    <source srcset="assets/images/photo-card-2.avif" type="image/avif">
+                                    <source srcset="assets/images/photo-card-2.webp" type="image/webp">
+                                    <img src="assets/images/photo-card-2.jpg" alt="Badge" class="contact-card__image" loading="lazy">
+                                </picture>
+                                <div class="contact-card__info">
+                                    <div class="contact-card__info-details">
+                                        <h3 class="contact-card__name">
+                                            Лилия
+                                        </h3>
+                                        <a href="mailto:Administracja@neway.com.pl" class="contact-card__email">Administracja@neway.com.pl</a>
+                                    </div>
+                                    <div class="contact-card__info-details">
+                                        <p class="contact-card__activity">
+                                            Территориальная сфера деятельности:
+                                        </p>
+                                        <p class="contact-card__territory">
+                                            Силезское воеводство, Великопольское воеводство, Нижнесилезское воеводство, Лодзинское воеводство
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-card">
+                                <picture>
+                                    <source srcset="assets/images/photo-card-1.avif" type="image/avif">
+                                    <source srcset="assets/images/photo-card-1.webp" type="image/webp">
+                                    <img src="assets/images/photo-card-1.jpg" alt="Badge" class="contact-card__image" loading="lazy">
+                                </picture>
+                                <div class="contact-card__info">
+                                    <div class="contact-card__info-details">
+                                        <h3 class="contact-card__name">
+                                            Лилия
+                                        </h3>
+                                        <a href="mailto:Administracja@neway.com.pl" class="contact-card__email">Administracja@neway.com.pl</a>
+                                    </div>
+                                    <div class="contact-card__info-details">
+                                        <p class="contact-card__activity">
+                                            Территориальная сфера деятельности:
+                                        </p>
+                                        <p class="contact-card__territory">
+                                            Силезское воеводство, Великопольское воеводство, Нижнесилезское воеводство, Лодзинское воеводство
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-card">
+                                <picture>
+                                    <source srcset="assets/images/photo-card-2.avif" type="image/avif">
+                                    <source srcset="assets/images/photo-card-2.webp" type="image/webp">
+                                    <img src="assets/images/photo-card-2.jpg" alt="Badge" class="contact-card__image" loading="lazy">
+                                </picture>
+                                <div class="contact-card__info">
+                                    <div class="contact-card__info-details">
+                                        <h3 class="contact-card__name">
+                                            Лилия
+                                        </h3>
+                                        <a href="mailto:Administracja@neway.com.pl" class="contact-card__email">Administracja@neway.com.pl</a>
+                                    </div>
+                                    <div class="contact-card__info-details">
+                                        <p class="contact-card__activity">
+                                            Территориальная сфера деятельности:
+                                        </p>
+                                        <p class="contact-card__territory">
+                                            Мазовецкое воеводство и Поморское воеводство
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
