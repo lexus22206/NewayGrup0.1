@@ -10,7 +10,7 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="container-mobile">
+            <div class="container">
                 <div class="header-wrapper">
                     <a href="index.html" class="logo">
                         <img src="assets/images/logo1.svg" alt="Logo" class="logo-img">
@@ -30,7 +30,7 @@
                                     <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <line x1="3.6636" y1="3.1362" x2="15.8612" y2="15.3338" stroke="white" stroke-width="0.75"/>
                                         <line x1="15.8667" y1="3.66653" x2="3.66913" y2="15.8641" stroke="white" stroke-width="0.75"/>
-                                    </svg>                                    
+                                    </svg>                                                                           
                                 </span>
                             </div>
                         </div>
@@ -40,7 +40,14 @@
                                     О нас
                                     <span class="menu__btn-arrow"></span>
                                 </button>
-                                <div class="submenu__level submenu__level--1">
+                                <div class="submenu">
+                                    <div class="submenu__button">
+                                        <span class="submenu__button-back">
+                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20.071 11.6422L4.40582 11.6422L11.4225 18.6589L9.79071 20.2907L0 10.5L9.79071 0.70929L11.4225 2.34107L4.40582 9.35775L20.071 9.35775L20.071 11.6422Z" fill="#0B1A27" />
+                                            </svg>                                                                          
+                                        </span>
+                                    </div>
                                     <ul class="submenu__list">
                                         <li class="submenu__item" data-target="about-1">
                                             <button class="submenu__btn">
@@ -84,9 +91,9 @@
                                 </button>
                             </li>
                             <li class="menu__item">
-                                <button class="menu__btn">
-                                    Сообщить о нарушении
-                                </button>
+                                <a href="mobile-first.html" class="menu__btn">
+                                    Mobile-first
+                                </a>
                             </li>
                         </ul>
                     </nav>
@@ -106,8 +113,7 @@
                     </div>
                     <button class="menu-mobile__button-wrapper">
                         <span class="menu-mobile__button">Menu</span>
-                    </button>
-                    
+                    </button>    
                 </div>
             </div>
         </header>

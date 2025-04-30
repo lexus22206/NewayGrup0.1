@@ -150,9 +150,9 @@ li {
     border-radius: 2px;
     background-color: transparent;
 }
-.submenu__level {
+.submenu {
     position: fixed;
-    top: 99px;
+    top: 86px;
     left: 0;
     background-color: #fff;
     width: 490px;
@@ -161,6 +161,23 @@ li {
     z-index: 999;
     display: none;
     flex-direction: column;
+}
+.submenu__button {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border: 0.75px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 3px;
+    z-index: 1000;
+    display: none;
+}
+.submenu__button-back {
+    display: flex;
+    align-items: center;
+    border: 0.75px solid #f3f3f3;
+    border-radius: 3px;
+    padding: 15px 18px;
 }
 .submenu__item {
     padding: 10px;
@@ -351,6 +368,9 @@ li {
     .lang__dropdown {
         padding: 12px 9px;
     }
+    .submenu {
+        top: 82px;
+    }
 }
 @media (max-width: 1100px) {
     .menu__btn,
@@ -360,6 +380,9 @@ li {
     .lang__dropdown {
         font-size: 12px;
         padding: 12px 9px;
+    }
+    .submenu {
+        top: 80px;
     }
 }
 @media (max-width: 992px)  {
@@ -428,8 +451,6 @@ li {
         position: absolute;
         top: 15px;
         right: 15px;
-        width: 51px;
-        height: 51px;
         border: 0.75px solid #e5e5e5;
         border-radius: 4px;
         padding: 3px;
@@ -444,10 +465,13 @@ li {
         background-color: #016bff;
        
     }
-    .submenu__level {
+    .submenu {
         top: 0;
         padding: 100px 20px;
         width: 100%;
+    }
+    .submenu__button {
+        display: block;
     }
     .submenu__list {
         display: flex;

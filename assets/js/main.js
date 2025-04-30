@@ -2,12 +2,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const langBtn = document.querySelector('.lang__current');
     const langDropdown = document.querySelector('.lang__dropdown-wrapper');
     const menuBtns = document.querySelectorAll('.menu__btn');
-    const allSubmenus = document.querySelectorAll('.submenu__level');
+    const allSubmenus = document.querySelectorAll('.submenu');
     const header = document.querySelector('.header');
     const main = document.querySelector('.main');
     const menuButton = document.querySelector('.menu-mobile__button-wrapper');
     const mobileMenu = document.querySelector('.menu');
     const closeButton = document.querySelector('.menu-mobile__close');
+    
   
     langBtn?.addEventListener('click', (e) => {
       e.stopPropagation();
@@ -33,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.addEventListener('click', (e) => {
         e.stopPropagation();
         const menuItem = e.target.closest('.menu__item');
-        const submenu = menuItem?.querySelector('.submenu__level');
+        const submenu = menuItem?.querySelector('.submenu');
           const isOpen = submenu.style.display === 'flex';
   
         allSubmenus.forEach(sm => sm.style.display = 'none');
@@ -47,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     });
-  
+    
     menuButton?.addEventListener('click', () => {
       mobileMenu.classList.add('menu--active');
       document.body.style.overflow = 'hidden';
@@ -60,6 +61,14 @@ document.addEventListener('DOMContentLoaded', () => {
       header.style.backgroundColor = '';
       main?.classList.remove('main--blur');
     });
+});
+
+const submenuBackButtons = document.querySelectorAll('.submenu__button');
+submenuBackButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const submenu = button.closest('.submenu');
+    submenu.style.display = 'none';
+  });
 });
 
 window.addEventListener('scroll', function () {
