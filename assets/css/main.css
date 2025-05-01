@@ -806,6 +806,10 @@ li {
         font-size: 14px;
         padding: 20px 45px;
     }
+    .city__link:hover {
+        background-color: #0b1a27;
+        color: #fff;
+    }
 }
 
 @media (min-width: 1200px) {
