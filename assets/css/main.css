@@ -320,14 +320,16 @@ li {
 }
 .hero-button__icon {
     display: flex;
-    width: 70px;
-    height: 70px;
+    justify-content: center;
+    align-items: center;
+    padding: 26px;
     border-radius: 111px;
     background-color: #0b1a27;
-    background-image: url('../images/arrow-btn.png');
-    background-repeat: no-repeat;
-    background-position: center;
     pointer-events: auto;
+}
+.hero-button__icon svg {
+    width: 13px;
+    height: 13px;
 }
 @media (max-width: 1500px) {
     .menu__btn,
@@ -530,8 +532,7 @@ li {
 	padding: 20px;
     }
     .hero-button__icon {
-        width: 56px;
-        height: 56px;
+        padding: 21px;
     }
 }
 
@@ -602,7 +603,6 @@ li {
         font-size: 15px;
     }
     .contact__button {
-        position: relative;
         display: inline-flex;
         align-items: center;
         pointer-events: none;
