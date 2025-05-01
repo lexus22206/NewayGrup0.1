@@ -447,7 +447,7 @@ li {
     .menu-mobile__button-wrapper {
         display: block;
     }
-    .menu-mobile__close-wrapper {
+    .menu-mobile__close {
         position: absolute;
         top: 15px;
         right: 15px;
@@ -456,7 +456,7 @@ li {
         padding: 3px;
         z-index: 1000;
     }
-    .menu-mobile__close {
+    .menu-mobile__close-btn {
         display: flex;
         align-items: center;
         border: 0.75px solid #f3f3f3;
