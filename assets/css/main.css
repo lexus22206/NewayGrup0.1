@@ -220,14 +220,14 @@ li {
     font-size: 16px;
     line-height: 1.1;
 }
-.menu-mobile__button-wrapper {
+.menu-burger {
     display: none;
     border: none;
     border-radius: 5px;
     padding: 5px;
     background-color: #fff;
 }
-.menu-mobile__button {
+.menu-burger__button {
     display: none;
     border: 1px solid #f3f3f3;
     border-radius: 2px;
@@ -395,7 +395,7 @@ li {
     .menu-mobile {
         display: block;
     }
-    .menu-mobile__button {
+    .menu-burger__button {
         display: block;
     }
     .menu.menu--active {
@@ -444,7 +444,7 @@ li {
         font-weight: 500;
         color: #016bff;
     }
-    .menu-mobile__button-wrapper {
+    .menu-burger {
         display: block;
     }
     .menu-mobile__close {

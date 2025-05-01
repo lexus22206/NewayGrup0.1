@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const allSubmenus = document.querySelectorAll('.submenu');
     const header = document.querySelector('.header');
     const main = document.querySelector('.main');
-    const menuButton = document.querySelector('.menu-mobile__button-wrapper');
+    const menuButton = document.querySelector('.menu-burger');
     const mobileMenu = document.querySelector('.menu');
     const closeButton = document.querySelector('.menu-mobile__close');
     
