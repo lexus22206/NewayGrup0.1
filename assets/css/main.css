@@ -278,6 +278,7 @@ li {
 .hero__img {
     width: 75px;
     height: 75px;
+    object-fit: cover;
 }
 .hero__img--center {
     width: 50px;
