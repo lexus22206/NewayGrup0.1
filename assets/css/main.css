@@ -615,6 +615,7 @@ li {
         padding: 11px 30px;
         border-radius: 111px;
         background-color: #fff;
+        cursor: pointer;
     }
     .contact__button-icon {
         display: flex;
@@ -623,6 +624,7 @@ li {
         padding: 14px;
         border-radius: 111px;
         background-color: #fff;
+        cursor: pointer;
     }
     .contact__button-icon svg {
         width: 7px;
