@@ -708,6 +708,10 @@ li {
         background-color: #0b1a27;
         color: #fff;
     }
+    a[href^="mailto:"]:active {
+        transform: scale(1.03);
+        transition: transform 0.3s ease;
+    }
 }
 
 @media (min-width: 576px) {
@@ -775,6 +779,10 @@ li {
 }
 
 @media (min-width: 992px)  {
+    a[href^="mailto:"]:hover {
+        transform: scale(1.03);
+        transition: transform 0.3s ease;
+    }
     .section-title {
         font-size: 55px;
     }
