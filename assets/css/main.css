@@ -205,12 +205,16 @@ li {
     font-weight: 400;
     line-height: 1.1;
     color: rgba(11, 26, 39, 0.35);
-
+    transition: transform 0.3s ease;
 }
 
 .lang-dropdown__link--active {
     color: #016bff;
     font-weight: 500;
+}
+
+.lang-dropdown__link:hover {
+    transform: scale(1.2);
 }
 
 .submenu {
