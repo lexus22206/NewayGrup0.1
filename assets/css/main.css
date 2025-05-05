@@ -142,6 +142,7 @@ li {
     border-radius: 2px;
     padding: 20px 25px;
     background: transparent;
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 
@@ -165,6 +166,15 @@ li {
 .lang {
     position: relative;
     text-transform: uppercase;
+}
+
+.lang__current:hover {
+    background-color: #0b1a27;
+    color: #fff;
+}
+
+.lang__current:hover .lang__current-arrow {
+    border-top: 10px solid #fff;
 }
 
 .lang-dropdown {

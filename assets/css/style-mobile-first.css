@@ -647,11 +647,34 @@ a[href^="mailto:"]:active {
         justify-content: flex-start;
         background-color: #fff;
         padding: 14px 6px;
+        transition: all 0.3s ease;
+    }
+
+    .menu__btn:hover {
+        background-color: #0b1a27;
+        color: #fff;
+    }
+
+    .menu__btn:hover .menu__btn-arrow {
+        border-top: 10px solid #fff;
     }
 
     .lang {
         display: block;
         position: relative;
+    }
+
+    .lang__current {
+        transition: all 0.3s ease;
+    }
+
+    .lang__current:hover {
+        background-color: #0b1a27;
+        color: #fff;
+    }
+
+    .lang__current:hover .lang__current-arrow {
+        border-top: 10px solid #fff;
     }
 
     .lang-dropdown__list {
@@ -672,6 +695,16 @@ a[href^="mailto:"]:active {
     .submenu__item {
         padding: 10px;
         background-color: transparent;
+        transition: all 0.3s ease;
+    }
+
+    .submenu__item:hover {
+        background-color: #0b1a27;
+        color: #fff;
+    }
+
+    .submenu__item:hover .submenu__btn {
+        background-image: none;
     }
 
     .menu-mobile {
