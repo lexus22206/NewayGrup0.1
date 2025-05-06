@@ -88,6 +88,7 @@ li {
 .header-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 15px 35px;
 }
 
@@ -102,12 +103,13 @@ li {
 
 .logo__wrapper {
     border: 1px solid #f3f3f3;
-    padding: 17px 25px;
+    padding: 19px 25px;
 }
 
 .logo__img {
+    display: block;
     max-width: 118px;
-    max-height: 21px;
+    max-height: 20px;
 }
 
 .menu__list,
@@ -179,7 +181,7 @@ li {
 
 .lang-dropdown {
     position: absolute;
-    width: -webkit-fill-available;
+    width: 100%;
     top: 100%;
     left: 0;
     border-radius: 2px;
@@ -298,7 +300,7 @@ li {
     display: none;
     border: 1px solid #f3f3f3;
     border-radius: 2px;
-    padding: 12px 9px;
+    padding: 14px 9px;
     background: transparent;
     cursor: pointer;
 }
@@ -418,22 +420,13 @@ li {
     height: 13px;
 }
 
-@media (max-width: 1500px) {
-
-    .menu__btn,
-    .lang__current {
-        gap: 5px;
-        padding: 20px;
-    }
-}
-
 @media (max-width: 1400px) {
     .header-wrapper {
         padding: 15px;
     }
 
     .logo__wrapper {
-        padding: 11px 15px;
+        padding: 13px 15px;
     }
 
     .menu__btn,
